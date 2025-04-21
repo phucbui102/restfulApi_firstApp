@@ -10,8 +10,9 @@ const route = require('./routes');
 const port = process.env.PORT || 3000;
 
 const corsOptions = {
-  origin: ['http://localhost:5173', 'https://01-react-taupe.vercel.app/'],
+  origin: ['http://localhost:5173', 'https://01-react-taupe.vercel.app'],
   methods: ['GET', 'POST'],
+  credentials: true
 };
 
 app.use(cors(corsOptions));
