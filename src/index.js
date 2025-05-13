@@ -12,14 +12,14 @@ const port = process.env.PORT || 3000;
 
 const io = new Server(server, {
   cors: {
-    origin: ['http://localhost:5173', 'https://01-react-taupe.vercel.app'],
+    origin: ['http://localhost:5173', 'https://01-react-taupe.vercel.app','https://ask-me-rosy.vercel.app'],
     methods: ['GET', 'POST'],
     credentials: true
   }
 });
 
 const corsOptions = {
-  origin: ['http://localhost:5173', 'https://01-react-taupe.vercel.app'],
+  origin: ['http://localhost:5173', 'https://01-react-taupe.vercel.app', 'https://ask-me-rosy.vercel.app'],
   methods: ['GET', 'POST'],
   credentials: true
 };
